@@ -1,0 +1,46 @@
+package top.cyanide.cyanide.service;
+
+import top.cyanide.cyanide.model.domain.Link;
+
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * @author : RYAN0UP
+ * @date : 2017/11/14
+ * @version : 1.0
+ * description:
+ */
+public interface LinkService {
+
+    /**
+     * 新增/修改友情链接
+     *
+     * @param link link
+     * @return Link
+     */
+    Link saveByLink(Link link);
+
+    /**
+     * 根据编号删除
+     *
+     * @param linkId linkId
+     * @return Link
+     */
+    Link removeByLinkId(Long linkId);
+
+    /**
+     * 查询所有
+     *
+     * @return List
+     */
+    List<Link> findAllLinks();
+
+    /**
+     * 根据编号查询单个链接
+     *
+     * @param linkId linkId
+     * @return Link
+     */
+    Optional<Link> findByLinkId(Long linkId);
+}
