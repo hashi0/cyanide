@@ -21,7 +21,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Slf4j
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "cc.ryanc.halo.web.controller")
+@ComponentScan(basePackages = "top.cyanide.cyanide.web.controller")
 @PropertySource(value = "classpath:application.yaml",ignoreResourceNotFound = true,encoding = "UTF-8")
 public class MvcConfig implements WebMvcConfigurer {
 

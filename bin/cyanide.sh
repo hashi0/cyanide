@@ -1,17 +1,17 @@
 #!/bin/bash
-APP_NAME=halo-beta.jar
+APP_NAME=cyanide-beta.jar
 
 usage() {
-    echo "用法: sh halo.sh [start(启动)|stop(停止)|restart(重启)|status(状态)]"
+    echo "用法: sh cyanide.sh [start(启动)|stop(停止)|restart(重启)|status(状态)]"
     exit 1
 }
 
 is_exist(){
-  pid=`ps -ef|grep $APP_NAME|grep -v grep|awk '{print $2}' `
+  pid=`ps -ef|grep ${APP_NAME}|grep -v grep|awk '{print $2}' `
   if [ -z "${pid}" ]; then
    return 1
   else
-    return 0
+   return 0
   fi
 }
 
