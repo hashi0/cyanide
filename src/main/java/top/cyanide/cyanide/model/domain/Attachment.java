@@ -9,12 +9,6 @@ import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author : RYAN0UP
- * @date : 2018/1/10
- * @version : 1.0
- * description :
- */
 @Data
 @Entity
 @Table(name = "halo_attachment")
