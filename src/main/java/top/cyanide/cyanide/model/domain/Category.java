@@ -8,12 +8,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author : RYAN0UP
- * @date : 2017/11/30
- * @version : 1.0
- * description : 分类目录实体类
- */
 @Data
 @Entity
 @Table(name = "halo_category")
